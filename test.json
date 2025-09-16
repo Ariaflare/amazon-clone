@@ -1,0 +1,202 @@
+[
+  {
+    "id": "prod_1",
+    "name": "Wireless Noise-Cancelling Headphones",
+    "category": "Electronics",
+    "price": 199.99,
+    "description": "Premium headphones with crystal-clear audio and advanced noise cancellation.",
+    "image": "base64_image_data_here_1"
+  },
+  {
+    "id": "prod_2",
+    "name": "Ergonomic Office Chair",
+    "category": "Furniture",
+    "price": 349.50,
+    "description": "Designed for maximum comfort and support during long work hours.",
+    "image": "base64_image_data_here_2"
+  },
+  {
+    "id": "prod_3",
+    "name": "Smartwatch with GPS",
+    "category": "Electronics",
+    "price": 149.99,
+    "description": "Track your fitness, receive notifications, and navigate with built-in GPS.",
+    "image": "base64_image_data_here_3"
+  },
+  {
+    "id": "prod_4",
+    "name": "Handmade Ceramic Mug",
+    "category": "Home Goods",
+    "price": 25.00,
+    "description": "A unique, handcrafted mug for your morning coffee or tea.",
+    "image": "base64_image_data_here_4"
+  },
+  {
+    "id": "prod_5",
+    "name": "Gaming Keyboard",
+    "category": "Electronics",
+    "price": 120.00,
+    "description": "Mechanical keyboard with customizable RGB lighting and fast response time.",
+    "image": "base64_image_data_here_5"
+  },
+  {
+    "id": "prod_6",
+    "name": "Bamboo Cutting Board Set",
+    "category": "Home Goods",
+    "price": 45.75,
+    "description": "A durable and eco-friendly set of cutting boards for your kitchen.",
+    "image": "base64_image_data_here_6"
+  },
+  {
+    "id": "prod_7",
+    "name": "Cotton Bed Sheets (Queen)",
+    "category": "Home Goods",
+    "price": 75.00,
+    "description": "Soft and breathable cotton sheets for a comfortable night's sleep.",
+    "image": "base64_image_data_here_7"
+  },
+  {
+    "id": "prod_8",
+    "name": "Portable Bluetooth Speaker",
+    "category": "Electronics",
+    "price": 89.99,
+    "description": "Compact and powerful speaker with long-lasting battery life.",
+    "image": "base64_image_data_here_8"
+  },
+  {
+    "id": "prod_9",
+    "name": "Yoga Mat",
+    "category": "Fitness",
+    "price": 30.00,
+    "description": "Non-slip surface and cushioned support for all your yoga poses.",
+    "image": "base64_image_data_here_9"
+  },
+  {
+    "id": "prod_10",
+    "name": "Stainless Steel Water Bottle",
+    "category": "Fitness",
+    "price": 20.50,
+    "description": "Keeps beverages cold for 24 hours and hot for 12 hours.",
+    "image": "base64_image_data_here_10"
+  },
+  {
+    "id": "prod_11",
+    "name": "LED Desk Lamp",
+    "category": "Home Goods",
+    "price": 39.99,
+    "description": "Adjustable brightness levels with touch control and USB charging port.",
+    "image": "base64_image_data_here_11"
+  },
+  {
+    "id": "prod_12",
+    "name": "Running Shoes",
+    "category": "Clothing",
+    "price": 89.95,
+    "description": "Lightweight and breathable shoes designed for runners.",
+    "image": "base64_image_data_here_12"
+  },
+  {
+    "id": "prod_13",
+    "name": "Wireless Mouse",
+    "category": "Electronics",
+    "price": 29.99,
+    "description": "Ergonomic design with smooth tracking and silent clicks.",
+    "image": "base64_image_data_here_13"
+  },
+  {
+    "id": "prod_14",
+    "name": "Cookbook: Healthy Meals",
+    "category": "Books",
+    "price": 22.00,
+    "description": "A collection of easy and nutritious recipes for everyday cooking.",
+    "image": "base64_image_data_here_14"
+  },
+  {
+    "id": "prod_15",
+    "name": "Wireless Charging Pad",
+    "category": "Electronics",
+    "price": 35.00,
+    "description": "Fast wireless charging for smartphones and earbuds.",
+    "image": "base64_image_data_here_15"
+  },
+  {
+    "id": "prod_16",
+    "name": "Recliner Sofa",
+    "category": "Furniture",
+    "price": 599.00,
+    "description": "Comfortable sofa with reclining seats for ultimate relaxation.",
+    "image": "base64_image_data_here_16"
+  },
+  {
+    "id": "prod_17",
+    "name": "Essential Oil Diffuser",
+    "category": "Home Goods",
+    "price": 28.50,
+    "description": "Fill your room with calming aromas and soft LED lighting.",
+    "image": "base64_image_data_here_17"
+  },
+  {
+    "id": "prod_18",
+    "name": "Electric Kettle",
+    "category": "Home Goods",
+    "price": 42.00,
+    "description": "Fast-boiling kettle with automatic shut-off feature.",
+    "image": "base64_image_data_here_18"
+  },
+  {
+    "id": "prod_19",
+    "name": "Resistance Bands Set",
+    "category": "Fitness",
+    "price": 25.99,
+    "description": "Portable exercise bands for strength training and stretching.",
+    "image": "base64_image_data_here_19"
+  },
+  {
+    "id": "prod_20",
+    "name": "Sunglasses with UV Protection",
+    "category": "Clothing",
+    "price": 55.00,
+    "description": "Stylish sunglasses with full UV protection for outdoor activities.",
+    "image": "base64_image_data_here_20"
+  },
+  {
+    "id": "prod_21",
+    "name": "Electric Standing Desk",
+    "category": "Furniture",
+    "price": 450.00,
+    "description": "Height-adjustable desk with memory presets for better posture.",
+    "image": "base64_image_data_here_21"
+  },
+  {
+    "id": "prod_22",
+    "name": "Lip Balm Set",
+    "category": "Beauty",
+    "price": 15.99,
+    "description": "Moisturizing lip balms in natural flavors.",
+    "image": "base64_image_data_here_22"
+  },
+  {
+    "id": "prod_23",
+    "name": "Backpack",
+    "category": "Clothing",
+    "price": 70.00,
+    "description": "Durable backpack with multiple compartments for daily use.",
+    "image": "base64_image_data_here_23"
+  },
+  {
+    "id": "prod_24",
+    "name": "Dumbbell Set",
+    "category": "Fitness",
+    "price": 120.00,
+    "description": "Adjustable dumbbells for versatile home workouts.",
+    "image": "base64_image_data_here_24"
+  },
+  {
+    "id": "prod_25",
+    "name": "E-reader",
+    "category": "Electronics",
+    "price": 129.99,
+    "description": "Read books anywhere with a glare-free screen and long battery life.",
+    "image": "base64_image_data_here_25"
+  }
+]
