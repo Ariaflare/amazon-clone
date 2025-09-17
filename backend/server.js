@@ -32,37 +32,43 @@ async function initializeProductsCollection(database) {
           name: "Smartphone",
           description: "Latest model smartphone with advanced features",
           category: "Electronics",
-          image: "https://via.placeholder.com/300x200?text=Smartphone"
+          image: "https://via.placeholder.com/300x200?text=Smartphone",
+          price: 699.99
         },
         {
           name: "Laptop",
           description: "High-performance laptop for work and gaming",
           category: "Electronics",
-          image: "https://via.placeholder.com/300x200?text=Laptop"
+          image: "https://via.placeholder.com/300x200?text=Laptop",
+          price: 1299.99
         },
         {
           name: "T-Shirt",
           description: "Comfortable cotton t-shirt",
           category: "Clothing",
-          image: "https://via.placeholder.com/300x200?text=T-Shirt"
+          image: "https://via.placeholder.com/300x200?text=T-Shirt",
+          price: 19.99
         },
         {
           name: "Jeans",
           description: "Stylish denim jeans",
           category: "Clothing",
-          image: "https://via.placeholder.com/300x200?text=Jeans"
+          image: "https://via.placeholder.com/300x200?text=Jeans",
+          price: 49.99
         },
         {
           name: "Novel",
           description: "Bestselling fiction novel",
           category: "Books",
-          image: "https://via.placeholder.com/300x200?text=Novel"
+          image: "https://via.placeholder.com/300x200?text=Novel",
+          price: 14.99
         },
         {
           name: "Cookbook",
           description: "Delicious recipes for home cooking",
           category: "Books",
-          image: "https://via.placeholder.com/300x200?text=Cookbook"
+          image: "https://via.placeholder.com/300x200?text=Cookbook",
+          price: 24.99
         }
       ];
       
