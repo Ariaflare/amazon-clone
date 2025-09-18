@@ -200,6 +200,186 @@ app.post('/products/batch', authenticateToken, authorizeRole('admin'), async (re
   }
 });
 
+// Protected route - Add a single product (admin only)
+app.post('/products', authenticateToken, authorizeRole('admin'), async (req, res) => {
+  try {
+    if (!db) {
+      return res.status(500).json({ success: false, message: "Database not connected" });
+    }
+    
+    const productsCollection = db.collection('products');
+    const product = req.body;
+    
+    // Validate product
+    if (!product.name || !product.description || !product.category || !product.image) {
+      return res.status(400).json({ 
+        success: false, 
+        message: "Product must have name, description, category, and image" 
+      });
+    }
+    
+    // Insert product
+    const result = await productsCollection.insertOne(product);
+    
+    res.json({ 
+      success: true, 
+      message: "Successfully added product",
+      productId: result.insertedId
+    });
+  } catch (error) {
+    console.error("Error adding product:", error);
+    res.status(500).json({ success: false, message: "Error adding product" });
+  }
+});
+
+// Protected route - Update a product (admin only)
+app.put('/products/:id', authenticateToken, authorizeRole('admin'), async (req, res) => {
+  try {
+    if (!db) {
+      return res.status(500).json({ success: false, message: "Database not connected" });
+    }
+    
+    const productsCollection = db.collection('products');
+    const productId = req.params.id;
+    const product = req.body;
+    
+    // Validate product
+    if (!product.name || !product.description || !product.category || !product.image) {
+      return res.status(400).json({ 
+        success: false, 
+        message: "Product must have name, description, category, and image" 
+      });
+    }
+    
+    // Update product
+    const result = await productsCollection.updateOne(
+      { _id: require('mongodb').ObjectId.createFromHexString(productId) },
+      { $set: product }
+    );
+    
+    if (result.matchedCount === 0) {
+      return res.status(404).json({ 
+        success: false, 
+        message: "Product not found" 
+      });
+    }
+    
+    res.json({ 
+      success: true, 
+      message: "Successfully updated product"
+    });
+  } catch (error) {
+    console.error("Error updating product:", error);
+    res.status(500).json({ success: false, message: "Error updating product" });
+  }
+});
+
+// Protected route - Delete a product (admin only)
+app.delete('/products/:id', authenticateToken, authorizeRole('admin'), async (req, res) => {
+  try {
+    if (!db) {
+      return res.status(500).json({ success: false, message: "Database not connected" });
+    }
+    
+    const productsCollection = db.collection('products');
+    const productId = req.params.id;
+    
+    // Delete product
+    const result = await productsCollection.deleteOne(
+      { _id: require('mongodb').ObjectId.createFromHexString(productId) }
+    );
+    
+    if (result.deletedCount === 0) {
+      return res.status(404).json({ 
+        success: false, 
+        message: "Product not found" 
+      });
+    }
+    
+    res.json({ 
+      success: true, 
+      message: "Successfully deleted product"
+    });
+  } catch (error) {
+    console.error("Error deleting product:", error);
+    res.status(500).json({ success: false, message: "Error deleting product" });
+  }
+});
+
+// Protected route - Update a product (admin only)
+app.put('/products/:id', authenticateToken, authorizeRole('admin'), async (req, res) => {
+  try {
+    if (!db) {
+      return res.status(500).json({ success: false, message: "Database not connected" });
+    }
+    
+    const productsCollection = db.collection('products');
+    const productId = req.params.id;
+    const product = req.body;
+    
+    // Validate product
+    if (!product.name || !product.description || !product.category || !product.image) {
+      return res.status(400).json({ 
+        success: false, 
+        message: "Product must have name, description, category, and image" 
+      });
+    }
+    
+    // Update product
+    const result = await productsCollection.updateOne(
+      { _id: require('mongodb').ObjectId.createFromHexString(productId) },
+      { $set: product }
+    );
+    
+    if (result.matchedCount === 0) {
+      return res.status(404).json({ 
+        success: false, 
+        message: "Product not found" 
+      });
+    }
+    
+    res.json({ 
+      success: true, 
+      message: "Successfully updated product"
+    });
+  } catch (error) {
+    console.error("Error updating product:", error);
+    res.status(500).json({ success: false, message: "Error updating product" });
+  }
+});
+
+// Protected route - Delete a product (admin only)
+app.delete('/products/:id', authenticateToken, authorizeRole('admin'), async (req, res) => {
+  try {
+    if (!db) {
+      return res.status(500).json({ success: false, message: "Database not connected" });
+    }
+    
+    const productsCollection = db.collection('products');
+    const productId = req.params.id;
+    
+    // Delete product
+    const result = await productsCollection.deleteOne(
+      { _id: require('mongodb').ObjectId.createFromHexString(productId) }
+    );
+    
+    if (result.deletedCount === 0) {
+      return res.status(404).json({ 
+        success: false, 
+        message: "Product not found" 
+      });
+    }
+    
+    res.json({ 
+      success: true, 
+      message: "Successfully deleted product"
+    });
+  } catch (error) {
+    console.error("Error deleting product:", error);
+    res.status(500).json({ success: false, message: "Error deleting product" });
+  }
+});
+
 // Protected route - User profile (accessible to all authenticated users)
 app.get('/profile', authenticateToken, (req, res) => {
   res.json({ success: true, user: req.user });
